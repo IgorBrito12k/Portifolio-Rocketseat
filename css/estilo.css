@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas:
+        "perfil container"
+        "infos section";
+    background: #22212C;
+    ;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+.perfil {
+    width: 340px;
+    height: 260px;
+    margin-bottom: 8px;
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin: 25px;
+    border-radius: 25px;
+    background-color: #302F3D;
+    padding: 10px;
+    /* texto */
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+}
+
+.pic{
+    border: 2px solid #CB92B1;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 70px;
+}
+
+.infos {
+    grid-area: infos;
+    width: 340px;
+    height: 370px;
+    margin-bottom: 8px;
+    /* border: 1px solid red; */
+    margin: 25px;
+    border-radius: 20px;
+    background-color: #302F3D;
+    /* texto */
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tirando o espaçamento paia das lista */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ajeitando os links */
+.infos ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #837E9F;
+}
+
+/* ajeitando o espaçamento entre os links */
+.infos ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 30px;
+    height: 50px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/* ajeitando os icones */
+.infos ul li a .icon icon-icon {
+    font-size: 1.5em;
+}
+
+/* Nossa Flexbox */
+.tecnologias {
+    width: 340px;
+    height: 370px;
+    margin-bottom: 8px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 25px;
+    border-radius: 20px;
+    background-color: #302F3D;
+    /* texto */
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.flexbox {
+    width: 70px;
+    height: 40px;
+    flex-grow: 0.2;
+    /*cresce de forma uniforme adaptando a div*/
+    background: #CB92B1;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+    margin: 8px;
+    padding: 10px;
+    /* texto */
+    text-align: center;
+    color: black
+}
+
+.experiencia {
+    width: 340px;
+    height: 370px;
+    margin-bottom: 8px;
+    /* border: 1px solid red; */
+    padding: 25px;
+    margin: 25px;
+    border-radius: 20px;
+    background-color: #302F3D;
+    /* texto */
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+    align-items: center;
+    list-style-type: normal;
+}
+
+.educacao {
+    width: 340px;
+    height: 370px;
+    margin-bottom: 8px;
+    /* border: 1px solid red; */
+    padding: 25px;
+    margin: 25px;
+    border-radius: 20px;
+    background-color: #302F3D;
+    /* texto */
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+    align-items: center;
+    list-style-type: normal;
+}
+
+.container {
+    grid-area: container;
+    /* border: 1px solid green; */
+    display: inline-block;
+    width: auto;
+    margin-top: 20px;
+    padding-top: -20px;
+    position: relative;
+}
+
+.projeto {
+    top: -20px;
+    width: 1400px;
+    height: 70px;
+    margin-bottom: 8px;
+    /* border: 1px solid red; */
+    margin: 25px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #302F3D;
+    ;
+    /* texto */
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+a.link{
+    /* /* display: block; */
+    height: 170px;
+    width: 670px;
+    text-decoration: none; 
+}
+
+.projeto-50 {
+    top: -40px;
+    display: inline-block;
+    width: 670px;
+    height: 170px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    padding: 20px;
+    margin: 25px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #302F3D;
+    /* texto */
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+    justify-content: center;
+}
+
+a.link2{
+    /* /* display: block; */
+    height: 170px;
+    width: 670px;
+    text-decoration: none; 
+}
+
+.recent-post {
+    top: -55px;
+    width: 1400px;
+    height: 70px;
+    margin-bottom: 8px;
+    /* border: 1px solid red; */
+    display: flex;
+    margin: 25px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #302F3D;
+    /* texto */
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: left;
+    padding: 10px;
+    align-items: center;
+}
+
+.pic2{
+    border: 2px solid #CB92B1;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    margin: 25px;
+}
+
+.post {
+    top: -45px;
+    width: 1400px;
+    height: 170px;
+    margin-bottom: 8px;
+    /* border: 1px solid red; */
+    display: flex;
+    margin: 25px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #302F3D;
+}
+
+.text1{
+     /* texto */
+     display: flex;
+     padding: 35px;
+     color: #837E9F;
+     font-family: 'Merriweather Sans', sans-serif;
+     text-align: justify;
+     justify-content: center;
+     align-items: center;
+}
