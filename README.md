@@ -1,5 +1,5 @@
 # Portifolio-Rockseat
-Este é um portifólio criado através de um desafio da plataforma Rockseat
+Este é um portifólio criado através de um desafio da plataforma Rocketseat
 
 # Prints
 
